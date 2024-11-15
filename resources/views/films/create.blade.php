@@ -7,26 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 p-8">
-<div class="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
-    <h1 class="text-2xl font-bold mb-4">Add New Film</h1>
+<div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Add New Film</h1>
     <form action="/store" method="POST">
-        <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700">Title:</label>
-            <input type="text" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter film title">
+        <div class="mb-5">
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Title:</label>
+            <input type="text" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter film title">
         </div>
 
-        <div class="mb-4">
-            <label for="director" class="block text-sm font-medium text-gray-700">Director:</label>
-            <input type="text" name="director" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter director's name">
+        <div class="mb-5">
+            <label for="director" class="block text-sm font-medium text-gray-700 mb-1">Director:</label>
+            <input type="text" name="director" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter director's name">
         </div>
 
-        <div class="mb-4">
-            <label for="year" class="block text-sm font-medium text-gray-700">Release Year:</label>
-            <input type="number" name="year" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter release year">
+        <div class="mb-5">
+            <label for="year" class="block text-sm font-medium text-gray-700 mb-1">Release Year:</label>
+            <input type="number" name="year" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter release year">
         </div>
 
-        <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Add Film</button>
+        <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Add Film</button>
     </form>
+    <a href="/" class="text-gray-500 hover:underline mt-4 block text-center">Return</a>
 </div>
 </body>
 </html>
